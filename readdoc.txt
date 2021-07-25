@@ -1,0 +1,28 @@
+"API to get all categories"
+/api/catalog/category/
+
+
+"API to get all subcategories"
+/api/catalog/sub-category/
+
+
+"API to get all products"
+/api/catalog/product/
+
+
+"API to add filters in product list"
+/api/catalog/product/?category_id=2&sub_category_id=1
+
+
+"To add product use json below and make a post request"
+/api/catalog/product/
+{
+    "category": null,
+    "title": "test",
+    "slug": "test",
+    "description": "test",
+    "cost": 100,
+    "is_active": false,
+    "sub_category": null
+}
+category and sub_category are id's if Category and SubCategory table
